@@ -25,7 +25,7 @@ import { $t, transformI18n } from "@/plugins/i18n";
 import { operates, thirdParty } from "./utils/enums";
 import { useLayout } from "@/layout/hooks/useLayout";
 import { useUserStoreHook } from "@/store/modules/user";
-import { bg, avatar, illustration } from "./utils/static";
+import { avatar, illustration, login_bg } from "./utils/static";
 import { ReImageVerify } from "@/components/ReImageVerify";
 import { useRenderIcon } from "@/components/ReIcon/src/hooks";
 import { useTranslationLang } from "@/layout/hooks/useTranslationLang";
@@ -110,8 +110,8 @@ watch(imgCode, value => {
 
 <template>
   <div class="select-none">
-    <img :src="bg" class="wave" />
-    <div class="flex-c absolute right-5 top-3">
+    <img :src="login_bg" class="wave" />
+    <div class="absolute flex-c right-5 top-3">
       <!-- 主题 -->
       <el-switch
         v-model="dataTheme"
@@ -266,9 +266,9 @@ watch(imgCode, value => {
           <Motion v-if="currentPage === 0" :delay="350">
             <el-form-item>
               <el-divider>
-                <p class="text-gray-500 text-xs">{{ t("login.thirdLogin") }}</p>
+                <p class="text-xs text-gray-500">{{ t("login.thirdLogin") }}</p>
               </el-divider>
-              <div class="w-full flex justify-evenly">
+              <div class="flex w-full justify-evenly">
                 <span
                   v-for="(item, index) in thirdParty"
                   :key="index"
@@ -277,7 +277,7 @@ watch(imgCode, value => {
                   <IconifyIconOnline
                     :icon="`ri:${item.icon}-fill`"
                     width="20"
-                    class="cursor-pointer text-gray-500 hover:text-blue-400"
+                    class="text-gray-500 cursor-pointer hover:text-blue-400"
                   />
                 </span>
               </div>
@@ -304,6 +304,18 @@ watch(imgCode, value => {
 <style lang="scss" scoped>
 :deep(.el-input-group__append, .el-input-group__prepend) {
   padding: 0;
+  background-color: #272e3b !important;
+  // border-radius: 20px, 30px, 40px, 40px;
+}
+
+:deep(.el-input) {
+  background-color: black;
+}
+
+:deep(.el-input__wrapper) {
+  border-radius: 1px;
+  box-shadow: 0;
+  //background-image: linear-gradient(78deg, #31019b, #8e427e, #c67d5a, #f7ba00);
 }
 
 .translation {

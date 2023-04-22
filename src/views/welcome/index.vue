@@ -74,7 +74,7 @@ axios
             >
               <TypeIt
                 :className="'type-it2'"
-                :values="['PureAdmin 版本日志']"
+                :values="['patlab版本日志']"
                 :cursor="false"
                 :speed="80"
               />
@@ -124,12 +124,12 @@ axios
           <template #header>
             <a
               :class="titleClass"
-              href="https://github.com/xiaoxian521"
+              href="https://github.com/xiongliff"
               target="_black"
             >
               <TypeIt
                 :className="'type-it1'"
-                :values="['GitHub信息']"
+                :values="['测试信息']"
                 :cursor="false"
                 :speed="120"
               />

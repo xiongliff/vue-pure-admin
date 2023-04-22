@@ -1,6 +1,6 @@
 {
-  "Version": "3.9.7",
-  "Title": "PureAdmin",
+  "Version": "3.0",
+  "Title": "patlab专利分析平台",
   "FixedHeader": true,
   "HiddenSideBar": false,
   "MultiTagsCache": false,

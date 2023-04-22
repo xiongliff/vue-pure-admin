@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		}
+	],
+	"settings": {
+		"i18n-ally.keystyle": "nested"
+	}
+}

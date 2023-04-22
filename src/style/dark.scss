@@ -1,5 +1,6 @@
-@use "element-plus/theme-chalk/src/dark/css-vars.scss" as *;
-
+// @use "element-plus/theme-chalk/src/dark/css-vars.scss" as *;
+@import "element-plus/theme-chalk/src/dark/css-vars.scss";
+@import "./login.css";
 /* 暗黑模式适配 */
 html.dark {
   /* 自定义深色背景颜色 */
@@ -26,6 +27,12 @@ html.dark {
   .logic-flow-view,
   .wangeditor {
     filter: invert(0.9) hue-rotate(180deg);
+  }
+  .login-form h2 {
+    text-transform: uppercase;
+    margin: 15px 0;
+    color: white;
+    font: bold 140% Consolas, Monaco, monospace;
   }
 
   /* 标签页 */

@@ -56,7 +56,7 @@ declare global {
 
   /**
    * 全局自定义环境变量的类型声明
-   * @see {@link https://yiming_chang.gitee.io/pure-admin-doc/pages/config/#%E5%85%B7%E4%BD%93%E9%85%8D%E7%BD%AE}
+   *
    */
   interface ViteEnv {
     VITE_PORT: number;
@@ -73,7 +73,7 @@ declare global {
 
   /**
    * 对应 `public/serverConfig.json` 文件的类型声明
-   * @see {@link https://yiming_chang.gitee.io/pure-admin-doc/pages/config/#serverconfig-json}
+   *
    */
   interface ServerConfigs {
     Version?: string;
@@ -108,7 +108,7 @@ declare global {
 
   /**
    * 与 `ServerConfigs` 类型不同，这里是缓存到浏览器本地存储的类型声明
-   * @see {@link https://yiming_chang.gitee.io/pure-admin-doc/pages/config/#serverconfig-json}
+   *
    */
   interface StorageConfigs {
     version?: string;

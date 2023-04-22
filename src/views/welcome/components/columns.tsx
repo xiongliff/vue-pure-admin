@@ -8,11 +8,11 @@ import User from "@iconify-icons/ri/user-3-fill";
 
 export function useColumns() {
   const lists = [
-    { type: "", label: "善良" },
-    { type: "success", label: "好学" },
-    { type: "info", label: "幽默" },
-    { type: "danger", label: "旅游" },
-    { type: "warning", label: "追剧" }
+    { type: "", label: "test1" },
+    { type: "success", label: "test2" },
+    { type: "info", label: "test3" },
+    { type: "danger", label: "test4" },
+    { type: "warning", label: "test5" }
   ];
 
   const columnsA = [
@@ -25,7 +25,7 @@ export function useColumns() {
           用户名
         </div>
       ),
-      value: "乐于分享的程序员小铭"
+      value: "xiongliff"
     },
     {
       labelRenderer: () => (
